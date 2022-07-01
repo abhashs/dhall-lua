@@ -7,7 +7,10 @@ edition = "2021"
 name = "dhall_lua"
 crate-type = ["cdylib"]
 
+[features]
+lua52 = ["mlua/lua52"]
+
 [dependencies]
-mlua = { version = "0.8", features = ["lua52", "vendored", "module", "serialize"] }
+mlua = { version = "0.8", features = ["vendored", "module", "serialize"] }
 serde = "1.0"
 serde_dhall = "0.11.2"

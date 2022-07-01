@@ -7,8 +7,10 @@ source = {
 }
 
 description = {
-   summary = "Dhall is a programmable configuration language optimized for maintainability",
-   detailed = "Dhall is a programmable configuration language optimized for maintainability",
+   summary = "Lua bindings for dhall configuration language",
+   detailed = [[
+    Library for Lua for reading dhall configuration files using the `serde-dhall` rust implementation
+   ]],
    homepage = "https://github.com/abhashs/dhall-lua",
    license = "MIT"
 }
