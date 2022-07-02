@@ -3,20 +3,20 @@ version = "dev-1"
 
 source = {
    url = "git+https://github.com/abhashs/dhall-lua.git",
-   tag = "0.1"
+   tag = "0.1.0"
 }
 
 description = {
    summary = "Lua bindings for dhall configuration language",
    detailed = [[
-    Library for Lua for reading dhall configuration files using the `serde-dhall` rust implementation
+    Library for reading Dhall configuration files using the `serde-dhall` Rust implementation
    ]],
    homepage = "https://github.com/abhashs/dhall-lua",
    license = "MIT"
 }
 
 dependencies = {
-    "lua >= 5.2",
+    "lua >= 5.1",
     "luarocks-build-rust-mlua",
 }
 

@@ -1,5 +1,5 @@
 use std::collections::BTreeMap;
-use mlua::prelude::LuaError;
+use mlua::prelude::*;
 use mlua::{Lua, Result, Table, Value, ToLua};
 use serde_dhall::{SimpleValue, NumKind, from_str};
 

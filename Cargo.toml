@@ -8,9 +8,15 @@ name = "dhall_lua"
 crate-type = ["cdylib"]
 
 [features]
+lua54 = ["mlua/lua54"]
+lua53 = ["mlua/lua53"]
 lua52 = ["mlua/lua52"]
+lua51 = ["mlua/lua51"]
+vendored = ["mlua/vendored"]
 
 [dependencies]
-mlua = { version = "0.8", features = ["vendored", "module", "serialize"] }
+mlua = { version = "0.8", features = ["module", "serialize"] }
 serde = "1.0"
 serde_dhall = "0.11.2"
+
+
