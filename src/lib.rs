@@ -8,7 +8,7 @@ fn list_to_table<'lua>(lua: &'lua Lua, dhall_list: &Vec<SimpleValue>) -> Table<'
         lua.create_table(),
         |table, (k, v)| table.and_then(
             |t| dhall_value_to_lua(lua, v).and_then(
-                |lua_value| t.set(k, lua_value).map(|_| t)))).unwrap()
+                |lua_value| t.set(k+1, lua_value).map(|_| t)))).unwrap()
 }
 
 fn record_to_table<'lua>(lua: &'lua Lua, 
